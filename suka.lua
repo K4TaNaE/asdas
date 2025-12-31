@@ -1203,8 +1203,7 @@ baby_ailments = {
 			task.wait(1)
 			timer -= 1
 		end
-		task.wait(.5)
-		ClientData.get("state_manager_raw").is_sitting = false
+		task.wait(3)
 		LocalPlayer.Character.Humanoid.Jump = true
 		if timer == 0 then error("Out of limits") end
 		enstat_baby(money, "dirty")  
@@ -1237,8 +1236,7 @@ baby_ailments = {
 			task.wait(1)
 			timer -= 1
 		end
-		task.wait(.5)
-		ClientData.get("state_manager_raw").is_sitting = false
+		task.wait(3)
 		LocalPlayer.Character.Humanoid.Jump = true
 		if timer == 0 then error("Out of limits") end
 		enstat_baby(money, "sleepy")  
